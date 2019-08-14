@@ -1,15 +1,16 @@
-# Web Aplikasi Inventory Gudang
+# Web Aplikasi Go-Edang
 
 Web aplikasi inventory gudang ini di buat memakai framework codeigniter yang sangat sederhana
 
 # User database
-<strong>Admin</strong><br>
+<strong>Admin Semarang</strong><br>
 Username : admin<br>
 Password : admin
 
-<strong>User Biasa</strong><br>
-Username : husni<br>
-Password : 123husni
+<strong>Admin Jakarta</strong><br>
+Username : coba<br>
+Password : jakarta
 
-# ScreenShot 
-<a href="https://drive.google.com/drive/folders/1-pOxHNzg4o_m0TClvvNhLFMJ-T1IvQsK?usp=sharing">All ScreenShot</a>
+<strong>Admin Surabaya</strong><br>
+Username : test<br>
+Password : test
