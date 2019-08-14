@@ -263,7 +263,7 @@
             <?php }else{ ?>
               <h3>0</h3>
             <?php } ?>
-              <p>Stok Barang Gudang</p>
+              <p>Jumlah Barang Masuk</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
