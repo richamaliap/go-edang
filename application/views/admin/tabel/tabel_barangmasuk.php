@@ -230,7 +230,7 @@
                     <td><?=$dd['nama_barang']?></td>
                     <td><?=$dd['merk']?></td>
 					<td><?=$dd['tipe']?></td>
-                    <td><?=$dd['jumlah']?></td>
+                    <td><?=$dd['jumlah_barang']?></td>
                     
                 </tr>
               <?php $no++; ?>
