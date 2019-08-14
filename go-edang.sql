@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2019 at 03:52 PM
+-- Generation Time: Aug 14, 2019 at 06:21 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -41,7 +41,9 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `nama_barang`, `jumlah`, `merk`, `tipe`) VALUES
-(123, 'Printer', 8, 'Epson', 'L120');
+(123, 'Printer', 6, 'Epson', 'L120'),
+(124, 'Scanner', 181, 'Canon', 'Lide 120'),
+(125, 'Monitor', 20, 'LG', '24mp88hm-S');
 
 -- --------------------------------------------------------
 
@@ -84,8 +86,11 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `jenis_transaksi`, `jumlah_barang`, `tanggal`, `id_barang`, `id_gudang`) VALUES
-('WG-201905162943', 'keluar', 1, '14/08/2019', 123, 3),
-('WG-201923914067', 'masuk', 7, '14/08/2019', 123, 1);
+('WG-201903124897', 'keluar', 3, '14/08/2019', 125, 3),
+('WG-201912793650', 'keluar', 23, '14/08/2019', 124, 2),
+('WG-201929861073', 'masuk', 204, '14/08/2019', 124, 1),
+('WG-201984795016', 'masuk', 23, '14/08/2019', 125, 1),
+('WG-201998250736', 'masuk', 6, '14/08/2019', 123, 1);
 
 -- --------------------------------------------------------
 
@@ -110,9 +115,9 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `email`, `username`, `nama`, `password`, `role`, `last_login`) VALUES
 (11, '', 'zahidin', 'riskididin@ymail.com', '$2y$10$WZYOZcN05JHriS09.C6o7evdWIJ3Obj7vNHzuLunFIAZCDJtG6W1C', 1, '17-03-2018 11:47'),
 (12, '', 'husni', 'husni@gmail.com', '$2y$10$MXbWRsLw6S6xpyQu2/ZiEeB7oTCLrfEPpDcXWaszFVoYj.Yv51wG.', 0, '17-03-2018 11:19'),
-(16, 'surabaya@yahoo.com', 'test', 'Admin Gudang Surabaya', '$2y$10$CTjzvmT5B.dxojKZOxsjTeMc4E7.Gwl9slAgX.0lozwGrKSMxzWdO', 1, '16-03-2018 4:46'),
-(17, '', 'coba', 'Admin Gudang Jakarta', '$2y$10$kzJ/B7kp0FfFuAg5OaLVHOPqlMOh4DwqdVpSSExLTue6.f1URaC9K', 1, '14-08-2019 15:50'),
-(20, 'semarang@outlook.com', 'admin', 'Admin Gudang Semarang', '$2y$10$3HNkMOtwX8X88Xb3DIveYuhXScTnJ9m16/rPDF1/VTa/VTisxVZ4i', 1, '14-08-2019 15:12');
+(16, 'surabaya@yahoo.com', 'test', 'Admin Gudang Surabaya', '$2y$10$CTjzvmT5B.dxojKZOxsjTeMc4E7.Gwl9slAgX.0lozwGrKSMxzWdO', 1, '14-08-2019 17:39'),
+(17, '', 'coba', 'Admin Gudang Jakarta', '$2y$10$kzJ/B7kp0FfFuAg5OaLVHOPqlMOh4DwqdVpSSExLTue6.f1URaC9K', 1, '14-08-2019 17:39'),
+(20, 'semarang@outlook.com', 'admin', 'Admin Gudang Semarang', '$2y$10$3HNkMOtwX8X88Xb3DIveYuhXScTnJ9m16/rPDF1/VTa/VTisxVZ4i', 1, '14-08-2019 17:51');
 
 --
 -- Indexes for dumped tables
