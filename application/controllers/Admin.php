@@ -468,7 +468,7 @@ class Admin extends CI_Controller{
         $this->M_admin->insert('transaksi',$data_transaksi);
 		$this->M_admin->substrStock('barang', $jumlah, $id_barang);
         $this->session->set_flashdata('msg_berhasil_keluar','Data Berhasil Keluar');
-        redirect(base_url('admin/tabel_barangmasuk'));
+        redirect(base_url('admin/tabel_barangkeluar'));
     }else {
       $this->load->view('perpindahan_barang/form_update/');
     }
